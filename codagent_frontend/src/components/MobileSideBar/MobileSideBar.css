@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .ModalContainer_mobile {
+    @apply sm:hidden fixed inset-0 bg-black bg-opacity-[0.5] flex justify-center items-start z-[1];
+  }
+
+  .modal-container-modal {
+    @apply bg-white p-2 rounded;
+  }
+
+  .ModalContainer_mobile .modal-container-modal {
+    @apply px-0 w-[300px] h-[360px] pt-6 mt-20 shadow-xl;
+  }
+
+  .MobileSideBar h1.title {
+    @apply mb-[20px] ml-[25px] tracking-[2.4px];
+  }
+
+  .MobileSideBar .navigation {
+    @apply p-0 h-[322px];
+  }
+
+  .MobileSideBar .nav-tabs_mobile {
+    @apply rounded-r-full mr-[24px] cursor-pointer py-[15px];
+  }
+
+  .MobileSideBar .nav-tab__content_mobile {
+    @apply items-center text-left ml-[25px] inline-flex my-4 w-[250px];
+  }
+
+  .active {
+    @apply bg-[#635fc7] text-[#fff];
+  }
+
+  .nav-icon_mobile {
+    @apply mr-[10px];
+  }
+
+  .MobileSideBar {
+    @apply text-[#828FA3];
+  }
+
+  .nav-tabs_mobile:hover {
+    @apply bg-[#635fc71a] text-[#635FC7];
+  }
+
+  .MobileSideBar .theme_and_switch_mobile {
+    @apply w-full flex justify-center items-center;
+  }
+
+  .MobileSideBar .switch_mobile {
+    @apply flex w-[251px] h-[48px] justify-center items-center bg-main-body-bg py-[15px] px-[50px] rounded-md;
+  }
+}

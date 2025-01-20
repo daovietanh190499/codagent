@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .ModalContainer {
+    @apply fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-[1];
+  }
+
+  .modal-container-modal {
+    @apply bg-white p-2 rounded;
+  }
+
+  .EditTask {
+    @apply max-h-[675px] sm:w-[480px] w-[343px] overflow-y-scroll p-6;
+  }
+
+  .EditTask > * {
+    @apply mb-4;
+  }
+
+  .EditTask label {
+    @apply inline-block w-full mb-3;
+  }
+
+  .EditTask .form-title {
+    @apply text-[19px] font-bold text-text-color;
+  }
+
+  .EditTask input {
+    @apply accent-[#635FC7] w-full h-[40px] border border-solid border-[#828FA340] rounded p-4 text-[13px] font-medium text-[black];
+  }
+
+  .EditTask .inputName {
+    @apply block text-[#828FA3] text-[13px] font-bold mb-2;
+  }
+
+  .EditTask input::placeholder {
+    @apply text-[13px] font-medium;
+  }
+
+  /* Descriptions Field  */
+  .EditTask textarea {
+    @apply accent-[#635FC7] w-full border border-solid border-[#828FA340] rounded p-4  text-[black] text-[13px] font-medium;
+  }
+
+  .EditTask textarea::placeholder {
+    @apply text-[13px] font-medium;
+  }
+
+  /* Substasks Section  */
+  .EditTask .add-subtask-section label {
+    @apply flex justify-center items-center;
+  }
+
+  /* ADD NEW SUBSTACK BTN  */
+  .EditTask .add-new-task-btn {
+    @apply w-full text-center rounded-[20px] bg-[#635fc71a] p-2 text-[#635FC7] text-[13px] mb-4 cursor-pointer;
+  }
+
+  .current-status select {
+    @apply w-full cursor-pointer;
+  }
+
+  .current-status select:focus-visible {
+    @apply outline-0;
+  }
+
+  .current-status span {
+    @apply inline-block text-[#828FA3] text-[13px] font-bold mb-2;
+  }
+
+  .current-status label {
+    @apply flex justify-between font-medium text-[#000112] items-center gap-4 cursor-pointer p-3 rounded-md border border-solid border-[#828FA340] text-right;
+  }
+
+  /* CREATE NEW TASK BTN  */
+  .EditTask .create-task {
+    @apply w-full text-[white] bg-[#635FC7] rounded-[20px] p-2 text-[13px];
+  }
+
+  .EditTask .create-task:hover {
+    @apply bg-[#A8A4FF];
+  }
+}

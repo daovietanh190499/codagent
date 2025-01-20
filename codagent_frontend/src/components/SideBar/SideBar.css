@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .sidebar {
+    @apply fixed h-screen hidden w-0 min-w-0 text-[#828FA3] bg-semi-main-body-bg border-r border-solid border-lines-dark  sm:block sm:w-[260px] md:w-[300px] z-[21];
+  }
+
+  .no-sidebar {
+    @apply w-0 min-w-0;
+  }
+
+  .main-container {
+    @apply flex;
+  }
+
+  .logo-section {
+    @apply mt-[34px] ml-[45px] mb-[55px] cursor-pointer text-text-color;
+  }
+
+  .navigation {
+    @apply flex text-left	flex-col justify-between text-[15px];
+  }
+
+  h1.title {
+    @apply mb-[20px] ml-[45px] tracking-[2.4px];
+  }
+
+  .nav-tabs {
+    @apply rounded-r-full mr-[24px] cursor-pointer py-[20px];
+  }
+
+  .add-board-btn {
+    @apply text-[#635FC7];
+  }
+
+  .switch {
+    @apply flex md:w-[251px] sm:w-[220px] h-[48px] justify-center items-center mb-[25px] bg-main-body-bg py-[15px] px-[50px] rounded-md;
+  }
+
+  .toggler {
+    @apply flex items-center justify-start bg-[#635fc7] w-[40px] h-[20px] rounded-[20px] mx-[30px] p-1 cursor-pointer;
+  }
+
+  .toggler-btn {
+    @apply h-[14px] w-[14px] p-[7px] rounded-full bg-[#fff];
+  }
+
+  .hide-btn {
+    @apply cursor-pointer;
+  }
+
+  .hide-sidebar-icon {
+    @apply mr-[20px] cursor-pointer inline;
+  }
+
+  main {
+    @apply w-full overflow-x-scroll overflow-y-scroll;
+  }
+
+  .nav-tab__content {
+    @apply flex items-center text-left ml-[45px];
+  }
+
+  .nav-icon {
+    @apply mr-[10px];
+  }
+
+  .active {
+    @apply bg-[#635fc7] text-[#fff];
+  }
+
+  .nav-tabs:hover {
+    @apply bg-[#635fc71a] text-[#635FC7];
+  }
+
+  .show-sidebar-btn {
+    @apply hidden items-center cursor-pointer justify-center bg-[#635fc7] w-[80px] h-[48px] rounded-r-full sm:flex;
+  }
+
+  .show-sidebar-icon {
+    @apply cursor-pointer;
+  }
+
+  .hideSidebar {
+    @apply hidden z-[2] cursor-pointer sm:flex items-center h-12 max-w-[245px] rounded-r-full;
+  }
+}
+
+.navigation {
+  height: calc(100vh - 97px);
+}
+
+.theme_and_switch {
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.switch {
+  transform: translateX(20px);
+}
+
+.hide-btn {
+  transform: translateX(20px);
+}
+
+.hideSidebar:hover {
+  color: #635fc7;
+  cursor: pointer;
+}
+
+/* main {
+  width: calc(100% - 300px);
+} */
+
+/* CRUCIAL THINGS I LEARNT I WANT TO INTERNALISE:
+1. Min Width of the Side
+2. How I Spaced The contents vertically
+3. How I made the Hide section Move up when resizing the page from bottom
+4. How I used Min-Width and Max Width on the side nav
+5. LEAR FLEX WELL AND TRANSLATE
+6. LEARN HOW TO REALLY ITERATE AND DISPLAY DATA
+7. HOW I CENTERED THE TEXT VERICALLY IN THAT STRECHED COL
+8. Understand How properties are being passed in React
+9. Learn Javasrcipt Arrays Methods
+10. Learn Typescript
+11. Check how you really updated those fields on change
+12. learn more about react forms
+13. How to create form using USEREF
+Learn the React Hook Form
+14. Learn the Diff btw handler functions and Callback functins
+15. Learn about react children and parent Hierachy, props, app structure
+16. Learn react form with form Control
+17 Learn React form validation with yup
+18. Learn react hooks and spread 
+19. Learn the Diffence btw 100% and 100vh
+*/
+
+/* Youtube Videos
+- Rules of Hooks
+- How to close and open another modal dynamically
+- React Developer Tools
+- TypeError: Cannot read properties of undefined (reading 'map')
+- 5 Most Common useState Mistakes React Developers Often Make
+- Why does Use State not update Immediatly
+- Diffences BTw React Hook Form and Formick
+- React Formik and Hooks Form 
+- How to Prefeill React Hook Form
+- Path.split is not a function in React
+- Imperative Hook
+ */

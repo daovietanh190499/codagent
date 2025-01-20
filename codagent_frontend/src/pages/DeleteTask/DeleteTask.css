@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .ModalContainer {
+    @apply fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-[1];
+  }
+
+  .modal-container-modal {
+    @apply bg-white p-2 rounded;
+  }
+
+  .DeleteTask {
+    @apply p-4 w-[343px] sm:w-[480px];
+  }
+
+  .DeleteTask .modal-title {
+    @apply text-red-700 mb-4;
+  }
+
+  .DeleteTask .short-note {
+    @apply text-gray-400 text-[13px] font-normal mb-6 leading-6;
+  }
+
+  .DeleteTask .action-buttons {
+    @apply w-full flex flex-col sm:flex-row text-center justify-evenly items-center;
+  }
+
+  .DeleteTask .action-buttons > * {
+    @apply m-2;
+  }
+
+  .DeleteTask .btn {
+    @apply py-2 px-14 w-[80%];
+  }
+
+  .DeleteTask .delete-btn {
+    @apply bg-red-400 rounded-full text-white text-[13px];
+  }
+
+  .DeleteTask .cancel-btn {
+    @apply rounded-full text-[#635FC7] text-[13px] bg-[#e4ebfa];
+  }
+}

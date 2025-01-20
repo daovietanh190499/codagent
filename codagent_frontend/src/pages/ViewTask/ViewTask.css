@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .ModalContainer {
+    @apply fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-[1];
+  }
+
+  .modal-container-modal {
+    @apply bg-white p-2 rounded;
+  }
+
+  .ViewTask-Modal {
+    @apply max-h-[557px] overflow-y-scroll overflow-x-hidden w-[343px] sm:w-[480px] p-6;
+  }
+
+  .ViewTask-Modal > * {
+    @apply mb-4;
+  }
+
+  .view_task-title {
+    @apply relative flex justify-between items-center text-[19px] font-bold mb-5;
+  }
+
+  .task-description {
+    @apply font-medium text-[#828FA3] text-[14px] leading-6 mb-5;
+  }
+
+  .sub-tasks > * {
+    @apply text-[13px] font-bold mb-3;
+  }
+
+  .sub-tasks {
+    @apply mb-9;
+  }
+
+  /* .sub-tasks:nth-child(4) {
+    @apply mb-8;
+  } */
+
+  span.number-of-tasks {
+    @apply inline-block mb-2 text-[#828FA3] text-[13px];
+  }
+
+  .sub-tasks label {
+    @apply flex text-[#000112] items-center gap-4 cursor-pointer bg-[#F4F7FD] p-3 rounded-md;
+  }
+
+  .inputName {
+    @apply text-black;
+  }
+
+  .current-status span {
+    @apply inline-block text-[#828FA3] text-[13px] font-bold mb-2;
+  }
+
+  .current-status label {
+    @apply flex justify-between font-medium text-[#000112] items-center gap-4 cursor-pointer p-3 rounded-md border border-solid border-[#828FA340] text-right;
+  }
+
+  .ViewTask-Modal input {
+    @apply accent-[#635FC7] cursor-pointer;
+  }
+
+  .current-status select {
+    @apply w-full cursor-pointer;
+  }
+
+  .current-status select:focus-visible {
+    @apply outline-0;
+  }
+
+  .ViewTask-Modal .dropdown-menu {
+    @apply h-24 px-4 w-48 flex items-start justify-center flex-col gap-2 rounded-lg absolute -right-5 top-14 bg-white text-[#828FA3] drop-shadow-md text-[15px];
+  }
+
+  /* .ViewTask-Modal .dropdown-menu::before {
+    @apply content-['_↗'] relative top-[-5px] right-[20px] h-[20px] w-[20px] bg-[red] rotate-45;
+  } */
+
+  .ViewTask-Modal .dropdown-menu.active {
+    @apply opacity-100 visible translate-y-0 ease-in-out;
+  }
+
+  .ViewTask-Modal .dropdown-menu.inactive {
+    @apply opacity-0 hidden translate-y-[-20px] ease-in-out;
+  }
+
+  .ViewTask-Modal .menu-ellipsis {
+    @apply p-3;
+  }
+
+  .incomplete {
+    @apply !bg-main-body-bg;
+  }
+
+  .completed {
+    @apply !bg-[#635fc740];
+  }
+
+  /* label > * {
+    @apply block;
+  } */
+
+  /* .number-of-tasks {
+    @apply mb-5;
+  } */
+}

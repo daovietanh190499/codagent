@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .PlatformLaunch {
+    @apply p-7 w-screen;
+  }
+
+  .add-new-column-btn {
+    @apply bg-[#635FC7] py-[13px] px-[14.5px] rounded-[50px] text-[15px] text-[#fff];
+  }
+
+  .empty-message {
+    @apply mb-[20px] text-[18px];
+  }
+
+  .default-content {
+    @apply flex flex-col justify-center items-center text-[#828FA3] h-screen w-full text-center;
+  }
+
+  .tasks-container {
+    @apply relative ml-0 sm:ml-80 flex justify-start gap-8 text-left mt-[90px];
+  }
+
+  .task {
+    @apply w-[280px] bg-semi-main-body-bg py-4 px-4 rounded-lg drop-shadow-md mb-4 cursor-pointer;
+  }
+
+  .PlatformLaunch .add-new-col {
+    @apply flex mt-8 items-center justify-center cursor-pointer bg-dark-gray-light drop-shadow-none h-[80vh];
+  }
+
+  .empty-task-col {
+    @apply mt-8 bg-[#E9EFFA] drop-shadow-none w-[280px] rounded-lg min-h-[80vh] h-full shrink-0;
+  }
+
+  .add-col-btn {
+    @apply flex w-[280px] justify-center text-[#828FA3] text-[24px] min-h-[80vh] h-full shrink-0 items-center;
+  }
+
+  div.title {
+    @apply flex items-center place-items-center mb-4 tracking-[2.4px] text-[12px] text-[#828FA3] uppercase leading-[15.12px];
+  }
+
+  div.no-task-title {
+    @apply flex items-center place-items-center tracking-[2.4px] text-[12px] text-[#828FA3] uppercase leading-[15.12px] mt-[-35px];
+  }
+
+  h3.task-title {
+    @apply text-[15px] text-text-color leading-[19px] cursor-pointer;
+  }
+
+  .task:hover > h3 {
+    @apply text-[#635fcf];
+  }
+
+  span.sub-task {
+    @apply text-[#828FA3] text-[12px];
+  }
+
+  .dot {
+    @apply block rounded-full p-[6px] mr-2 bg-[#49C4E5];
+  }
+
+  .Doing {
+    @apply block rounded-full p-[6px] mr-2 bg-[#8471F2];
+  }
+
+  .Done {
+    @apply block rounded-full p-[6px] mr-2 bg-[#67E2AE];
+  }
+
+  .Review {
+    @apply block rounded-full p-[6px] mr-2 bg-[#67E2AE];
+  }
+}
+
+/* @media (max-width: 640px) {
+  .PlatformLaunch {
+    width: 100vw;
+  }
+} */

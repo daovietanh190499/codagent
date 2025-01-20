@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+@import url("../../index.css");
+
+@layer base {
+  .ModalContainer {
+    @apply fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-[50];
+  }
+
+  .modal-container-modal {
+    @apply bg-white p-2 rounded;
+  }
+  .AddTask {
+    @apply max-h-[675px] sm:w-[480px] w-[343px] overflow-y-scroll p-6;
+  }
+
+  .AddTask > * {
+    @apply mb-4;
+  }
+
+  .AddTask label {
+    @apply inline-block w-full mb-3;
+  }
+
+  .AddTask-title {
+    @apply text-[19px] font-bold;
+  }
+
+  .AddTask input {
+    @apply accent-[#635FC7] w-full h-[40px] border border-solid border-[#828FA340] rounded p-4 text-[13px] font-medium text-[#828FA3];
+  }
+
+  .AddTask input::placeholder {
+    @apply text-[13px] font-medium;
+  }
+
+  .AddTask textarea {
+    @apply accent-[#635FC7] w-full border border-solid border-[#828FA340] rounded p-4  text-[#828FA3] text-[13px] font-medium;
+  }
+
+  .AddTask textarea::placeholder {
+    @apply text-[13px] font-medium;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    @apply outline-0;
+  }
+
+  /* .formErrors {
+    @apply text-[12px] text-[red] p-1;
+  }
+
+  .AddTask input:invalid .formErrors {
+    @apply block;
+  } */
+
+  .AddTask .inputName {
+    @apply block text-[#828FA3] text-[13px] font-bold mb-2;
+  }
+
+  .current-status select {
+    @apply w-full cursor-pointer;
+  }
+
+  .current-status select:focus-visible {
+    @apply outline-0;
+  }
+
+  .current-status span {
+    @apply inline-block text-[#828FA3] text-[13px] font-bold mb-2;
+  }
+
+  .current-status label {
+    @apply flex justify-between font-medium text-[#000112] items-center gap-4 cursor-pointer p-3 rounded-md border border-solid border-[#828FA340] text-right;
+  }
+
+  .add-subtask-section label {
+    @apply flex justify-center items-center;
+  }
+
+  .remove-subtask-btn {
+    @apply p-3;
+  }
+
+  /* ADD NEW SUBSTACK BTN  */
+  .AddTask .add-new-task-btn {
+    @apply w-full text-center rounded-[20px] bg-[#635fc71a] p-2 text-[#635FC7] text-[13px] mb-4 cursor-pointer;
+  }
+
+  .AddTask .add-new-task-btn:hover {
+    @apply bg-[#635fc740];
+  }
+
+  /* CREATE NEW TASK BTN  */
+  .AddTask .create-task {
+    @apply w-full text-[white] bg-[#635FC7] rounded-[20px] p-2 text-[13px];
+  }
+
+  .AddTask .create-task:hover {
+    @apply bg-[#A8A4FF];
+  }
+}

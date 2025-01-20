@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .inputName {
+    @apply !text-text-color;
+  }
+
+  .form-title {
+    @apply !text-text-color;
+  }
+
+  .modal-container-modal {
+    @apply !bg-semi-main-body-bg;
+  }
+
+  .add-column-btn {
+    @apply !bg-add-btn-bgcolor;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply !bg-semi-main-body-bg !text-text-color;
+  }
+
+  .dropdown-menu {
+    @apply !bg-main-body-bg;
+  }
+
+  .empty-task-col {
+    @apply !bg-dark-gray-light;
+  }
+
+  /* HOVER  */
+  .cancel-btn:hover {
+    @apply bg-[#635fc740];
+  }
+
+  .delete-btn:hover {
+    @apply bg-[#FF9898];
+  }
+
+  .add-new-column-btn:hover:enabled,
+  .add-task:hover:enabled,
+  .show-sidebar-btn:hover {
+    @apply !bg-[#A8A4FF];
+  }
+
+  .hideSidebar:hover {
+    @apply bg-hide-side-bar-hover;
+  }
+  .subtask-name:hover {
+    @apply !bg-[#635fc740];
+  }
+
+  .ModalContainer {
+    @apply z-[21];
+  }
+}
+
+body {
+  background-color: var(--main-body-bg);
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+:root {
+  --dark-gray-light: #e9effa;
+  --main-body-bg: #f4f7fd;
+  --semi-main-body-bg: #fff;
+  --text-color: #000112;
+  --lines-dark: #e4ebfa;
+  --add-btn-bgcolor: #635fc740;
+  --subtask-main-bg: #f4f7fd;
+  --hide-side-bar-hover: #635fc71a;
+}
+
+[data-theme="dark"] {
+  --dark-gray-light: #2b2c3780;
+  --semi-main-body-bg: #2b2c37;
+  --main-body-bg: #20212c;
+  --text-color: #fff;
+  --lines-dark: #3e3f4e;
+  --add-btn-bgcolor: #fff;
+  --subtask-main-bg: #635fc7;
+  --hide-side-bar-hover: #fff;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #635fc7;
+  border-radius: 10px;
+}

@@ -46,7 +46,7 @@ llm = ChatOpenAI(
     max_retries=2,
     # arbitrary_types_allowed=True,
     api_key="...",  # if you prefer to pass api key in directly instaed of using env vars
-    base_url="http://107.120.133.29:9113/v1",
+    base_url="http:///v1",
     # organization="...",
     # other params...
 )
